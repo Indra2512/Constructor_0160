@@ -11,3 +11,16 @@ public:
     void cetakData();
     void isiData();
 };
+//Definisi member functon
+angka::angka(int i){ //Constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+
+angka::~angka(){ //Destructor
+    cout<<endl;
+    cetakData();
+    delet[]arr;
+    cout<<"Alamat Array sudah dilepaskan"<<endl;
+}
