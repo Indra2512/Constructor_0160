@@ -21,6 +21,12 @@ angka::angka(int i){ //Constructor
 angka::~angka(){ //Destructor
     cout<<endl;
     cetakData();
-    delet[]arr;
+    delete[]arr;
     cout<<"Alamat Array sudah dilepaskan"<<endl;
+}
+
+void angka::cetakData(){
+    for(int i=1; i <= panjang; i++){
+        cout << i << " = " << arr[i] << endl;
+    }
 }
